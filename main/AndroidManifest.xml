@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <uses-permission
+        android:name="android.permission.READ_CLIPBOARD_IN_BACKGROUND"
+        tools:ignore="ManifestOrder,ProtectedPermissions,WrongManifestParent" />
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="RN密码管理"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31" >
+        <activity
+            android:name="com.lte.rn1.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.lte.rn1.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lte.rn1.shengChengActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.lte.rn1.settingActivity0"
+            android:exported="true" />
+    </application>
+
+</manifest>
